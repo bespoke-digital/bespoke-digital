@@ -42,7 +42,6 @@
   <style type="text/css">
     html {
       box-sizing: border-box;
-      min-height: 100%;
 
       font-family: 'Bilbo Swash Caps', cursive;
       color: white;
@@ -55,7 +54,6 @@
     }
 
     body {
-      min-height: 100%;
       margin: 0;
 
       background-image: url('img/background.jpg');
@@ -69,6 +67,10 @@
     }
 
     @media (min-width: 767px) {
+      html, body {
+        height: 100%;
+      }
+
       .content {
         position: absolute;
         width: 530px;
