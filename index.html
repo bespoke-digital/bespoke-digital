@@ -36,18 +36,19 @@
     ga('send', 'pageview');
   </script>
 
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-  <link href='http://fonts.googleapis.com/css?family=Crimson+Text:400italic' rel='stylesheet' type='text/css'>
-
+  <script src="//use.typekit.net/pwo4upo.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
 
   <style type="text/css">
     html {
       box-sizing: border-box;
 
+      background-color: #443631;
+
       font-family: 'Crimson Text', serif;
       font-style: italic;
-      color: #fff;
-      font-size: 26px;
+      font-size: 18px;
+      color: white;
       line-height: 1;
       text-align: center;
     }
@@ -57,60 +58,100 @@
 
     body {
       margin: 0;
+    }
 
-      background-image: url('img/bespoke-bg.jpg');
+    p {
+      max-width: 600px;
+      margin: 20px auto;
+    }
+
+    a, a:active, a:visited, a:hover {
+      color: white;
+      text-decoration: underline;
+    }
+
+    img.info {
+      width: 80px;
+    }
+
+    section {
+      margin: 0;
+      padding: 40px 0;
+
+    }
+
+    section h2 {
+      font-family: LondonBetween, sans;
+    }
+
+    section.header {
+      padding: 200px 0;
+
+      font-size: 26px;
+
+      background-image: url('img/bespoke-digital-bike.jpg');
       background-repeat: no-repeat;
       background-size: cover;
       transform-style: preserve-3d;
     }
 
-    p {
-      margin: 20px 0;
+    section.team {
+      background-color: #c4af96;
     }
 
-    .email-icon {
-      width: 40px;
-      height: auto;
+    section.what-we-do {
+      background-color: #968375;
     }
 
-    @media (min-width: 767px) {
-      html, body {
-        height: 100%;
-      }
-
-      .content {
-        position: absolute;
-        width: 530px;
-
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-      }
+    section.technology {
+      background-color: #736357;
     }
 
-    @media (max-width: 767px) {
-      .content {
-        width: 100%;
-        padding: 40px;
-      }
-      .content > img {
-        max-width: 100%;
-      }
+    section.contact {
+      background-color: #534741;
     }
   </style>
 </head>
 <body>
-  <div class="content">
+  <section class="header">
     <p>Welcome to</p>
-    <img src="img/logo.svg" alt="Bespoke Digital"/>
+    <img src="img/bespoke-digital-logo.svg" alt="Bespoke Digital" class="logo"/>
     <p>
-    Bespoke Digital is a dev and design shop out of Toronto. Together, we will design, build and grow your product.
+      Bespoke Digital is a dev and design shop out of Toronto. Together, we will design, build and grow your product.
     </p>
+  </section>
+  <section class="team">
+    <img src="img/bespoke-digital-lightbulb.svg" alt="Team" class="info"/>
+    <h2>Team</h2>
     <p>
-      <a href="mailto:hello@bespoke.digital">
-        <img src="img/mail.svg" alt="Email Us" class="email-icon"/>
-      </a>
+      We’re extremely passionate about solving problems with design and technology. We’ve been building products and services for some time and can help you move faster and smarter. Name the buzzword (e.g, Lean, Agile, SEO, Design Sprint...) and we’ve been through the trenches. We’ve gone down the hard road and discovered the smarter path. Our past experience will save you time and help you avoid mistakes.
     </p>
-  </div>
+  </section>
+  <section class="what-we-do">
+    <img src="img/bespoke-digital-axe.svg" alt="What we do" class="info"/>
+    <h2>What we do</h2>
+    <p>
+      There are smarter ways to build and measure your business and we’ll show you how. Whether your project is web or mobile or both, we will use the best technology for what you’d like to achieve. We like to move fast, ensuring we’re measuring and learning as we go. Whatever your design or technical challenge may be, we’ll help you rise to the occasion.
+    </p>
+  </section>
+  <section class="technology">
+    <img src="img/bespoke-digital-leaf.svg" alt="Technology" class="info"/>
+    <h2>Technology</h2>
+    <p>
+      We specialize in full-stack JavaScript and API-driven architectures. In today’s environment you need a platform that can support Android, iOS, the web and more. An API-first design gets you there. We also believe that Isomorphic JavaScript with React.js is a new high water mark in what’s possible with web technology. It provides strong SEO and a rich, snappy user experience while still enabling fast iteration.
+    </p>
+  </section>
+  <section class="contact">
+    <img src="img/bespoke-digital-phone.svg" alt="Contact" class="info"/>
+    <h2>Contact</h2>
+    <p>
+      Want to chat about your project and how we can help? Please email us at <a href="mailto:hello@bespoke.digital">hello@bespoke.digital</a> and we can arrange to meet for a coffee or whatever your favourite beverage choice is.
+    </p>
+  </section>
+  <section class="copyright">
+    <small>
+      © Bespoke Digital Inc., 2015.  All Rights Reserved.
+    </small>
+  </section>
 </body>
 </html>
