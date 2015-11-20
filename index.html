@@ -46,16 +46,10 @@
 
       font-family: 'Crimson Text', serif;
       font-style: italic;
-<<<<<<< HEAD
-<<<<<<< HEAD
-      font-size: 22px;
+
       color: black;
-=======
-=======
->>>>>>> gh-pages
-      color: #eeeeee;
-      font-size: 26px;
->>>>>>> gh-pages
+      font-size: 22px;
+
       line-height: 1;
       text-align: center;
     }
@@ -97,19 +91,25 @@
     }
 
     section.header {
-          
-    padding: 200px 0;
-
-      font-size: 26px;
-
-      background-image: url('img/bespoke-bg.jpg');
-      background-repeat: no-repeat;
+      position: relative;
       width: 100%;
       height: 100vh;
+      background-image: url('img/bespoke-bg.jpg');
+      background-repeat: no-repeat;
       background-position: center center;
       background-position-x: 50%;
       background-position-y: 50%;
       background-size: cover;
+
+      padding: 200px 0;
+      font-size: 26px;
+    }
+
+    .header-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
 
     section.team {
@@ -131,11 +131,13 @@
 </head>
 <body>
   <section class="header">
-    <p>Welcome to</p>
-    <img src="img/bespoke-digital-logo.svg" alt="Bespoke Digital" class="logo"/>
-    <p>
-      Bespoke Digital is a dev and design shop out of Toronto. Together, we will design, build and grow your product.
-    </p>
+    <div class="header-content">
+      <p>Welcome to</p>
+      <img src="img/bespoke-digital-logo.svg" alt="Bespoke Digital" class="logo"/>
+      <p>
+        Bespoke Digital is a dev and design shop out of Toronto. Together, we will design, build and grow your product.
+      </p>
+    </div>
   </section>
   <section class="team">
     <img src="img/bespoke-digital-lightbulb.svg" alt="Team" class="info"/>
